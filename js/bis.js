@@ -7,3 +7,4 @@
 */
     console.log('bismillah');
     console.log ('alhamdulillah');
+	console.log ('subhanAllah');
