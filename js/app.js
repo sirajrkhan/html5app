@@ -1,1 +1,3 @@
-console.log("Bimismillah");
+(function(){
+  console.log("Bimismillah");  
+})();
