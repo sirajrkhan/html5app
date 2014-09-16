@@ -1,8 +1,15 @@
 $color: #FF0000;
 $grey_bor: 1px solid #eee;
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
 
 //This color would be RED
 .myClass {
 color: $color;
 }
 
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
