@@ -2,6 +2,7 @@ $color: #FF0000;
 $grey_bor: 1px solid #eee;
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
+$bg-color: transparent;
 
 
 //This color would be RED
@@ -12,4 +13,5 @@ color: $color;
 body {
   font: 100% $font-stack;
   color: $primary-color;
+  background-color:$bg-color;
 }
