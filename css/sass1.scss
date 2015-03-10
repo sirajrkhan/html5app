@@ -6,6 +6,14 @@ $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
 $bg-color: transparent;
 
+//for clearfix
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
 
 //This color would be RED
 .myClass {
