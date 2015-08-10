@@ -5,14 +5,10 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="node_modules/foundation-sites/css/foundation.min.css">
 	<link rel="stylesheet" href="node_modules/foundation-sites/css/normalize.min.css">
-	<script src="node_modules/foundation-sites/js/foundation.min.js"></script>
 	<script src="node_modules/foundation-sites/js/vendor/jquery.js"></script>
 	<script src="node_modules/foundation-sites/js/vendor/modernizr.js"></script>
-	
-	<script src="bower_components/foundation/js/foundation.min.js"></script>
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/modernizr/"></script>
-	
+	<script src="node_modules/foundation-sites/js/foundation.min.js"></script>
+		
 </head>
 <body>
   <div class="row">
@@ -81,15 +77,27 @@
   <!-- First Band (Image) -->
 
 	 <div class="row">
-		<div class="large-12 columns">
-			<div class="orbit-container aig_caption">
-				<ul class="example-orbit" data-orbit>
-				  <li><img src="http://placehold.it/1000x400&amp;text=Slider 1" alt="Image 1">
-						<div class="orbit-caption">Slide One Caption</div>	 
-				  </li> 
-				</ul>
-			</div>
-			<hr>
+		<div class="large-12 columns">			
+			<ul class="example-orbit" data-orbit>
+  <li>
+    <img src="http://placehold.it/1000x400&amp;text=Slider 1" alt="slide 1" />
+    <div class="orbit-caption">
+      Caption One.
+    </div>
+  </li>
+  <li class="active">
+    <img src="http://placehold.it/1000x400&amp;text=Slider 1" alt="slide 2" />
+    <div class="orbit-caption">
+      Caption Two.
+    </div>
+  </li>
+  <li>
+    <img src="http://placehold.it/1000x400&amp;text=Slider 1" alt="slide 3" />
+    <div class="orbit-caption">
+      Caption Three.
+    </div>
+  </li>
+</ul>
 		</div>
 	  </div>
 <!-- Three-up Content Blocks -->
@@ -155,6 +163,12 @@
     </div>
   </footer>
   </br>
+    <script>
+      $(document).foundation();
+
+      var doc = document.documentElement;
+      doc.setAttribute('data-useragent', navigator.userAgent);
+    </script>
 
 </body>
 </html>
